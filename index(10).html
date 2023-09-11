@@ -1,0 +1,322 @@
+<!doctype html><html><head><script type="text/javascript" src="https://unpkg.com/react/umd/react.development.js"></script><script type="text/javascript" src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script><style type="text/css">
+.button-container button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid lime;
+  color: lime;
+  opacity: 0.7;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px lime;
+  }
+  100% {
+    box-shadow: 0 0 10px lime;
+  }
+}
+
+.calculator {
+    border: 2px solid transparent;
+    width: 280px;
+    box-sizing: border-box;
+    margin: 40px auto 0;
+    font-family: verdana;
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px limegreen;
+    }
+    50% {
+        box-shadow: 0 0 20px limegreen;
+    }
+    100% {
+        box-shadow: 0 0 10px limegreen;
+    }
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    color: limegreen;
+    height: 60px;
+}
+
+.calculator .form-group {
+    background-color: transparent;
+		margin-bottom: 0;
+    color: limegreen;
+}
+
+.calculator input[type=text] {
+    background-color: transparent;
+		font-size: 1.5rem;
+    color: limegreen;
+}
+
+.calculator .btn {
+   background-color: transparent;
+	  font-size: 1.5rem;
+    color: limegreen;
+    width: 100
+}
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("https://gifdb.com/images/high/outer-space-planets-background-d6dsvq0armnh3ajg.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your webpage contents go here -->
+</body>
+</html></style></head><body><button onclick="window.location.href='https://main--gleeful-crepe-0a5b53.netlify.app/'">Settings</button>
+<table class="calculator table">
+	<thead>
+		<tr>
+			<td colspan=7>
+				<div class="output form-group">
+					<input type="text" class="ans form-control" readonly name="">
+            </div>
+			</td>
+		</tr>
+	</thead>
+	<tbody class="actions">
+		<tr>
+			<td colspan=3></td>
+			<td>
+				<button class="btn btn-op" data-value='*('>(</button>
+
+			</td>
+			<td>
+				<button class="btn btn-op" data-value=')'>)</button>
+
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='%'>%</button>
+
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='ce'>CE</button>
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="btn btn-op" data-value='inv'>Inv</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='sin'>sin</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='ln'>ln</button>
+			</td>
+			<td>
+				<button class="btn" data-value='7'>7</button>
+			</td>
+			<td>
+				<button class="btn" data-value='8'>8</button>
+			</td>
+			<td>
+				<button class="btn" data-value='9'>9</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='/'>÷</button>
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="btn btn-op" data-value='*3.14'>À</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='cos'>cos</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='log'>log</button>
+			</td>
+			<td>
+				<button class="btn" data-value='4'>4</button>
+			</td>
+			<td>
+				<button class="btn" data-value='5'>5</button>
+			</td>
+			<td>
+				<button class="btn" data-value='6'>6</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='*'>	×</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<button class="btn btn-op" data-value='e'>e</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='tan'>tan</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='radic'></button>
+			</td>
+			<td>
+				<button class="btn" data-value='3'>3</button>
+			</td>
+			<td>
+				<button class="btn" data-value='2'>2</button>
+			</td>
+			<td>
+				<button class="btn" data-value='1'>1</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='-'>-</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="btn btn-op" data-value='exp'>EXP</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='x^2'>x²</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='**'>x^</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='.'>.</button>
+			</td>
+			<td>
+				<button class="btn" data-value='0'>0</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='='>=</button>
+			</td>
+			<td>
+				<button class="btn btn-op" data-value='+'>+</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			background-image: url("https://gifdb.com/images/high/outer-space-planets-background-d6dsvq0armnh3ajg.webp");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Your webpage content goes here -->
+</body>
+
+</html>
+      <script type="module">var actions = document.querySelector('.actions');
+var ans = document.querySelector('.ans');
+console.log(actions);
+console.log(ans);
+var expression = '';
+var a = 0;
+actions.addEventListener('click', function (e) {
+  console.log(e.target);
+  var value = e.target.dataset['value'];
+
+  if (value !== undefined) {
+    // I'm good to go.
+    if (value == 'ce') {
+      expression = '';
+      ans.value = 0;
+      return true;
+    } else if (value == 'x^2') {
+      expression = square();
+    } else if (value == 'radic') {
+      expression = Math.sqrt(expression);
+    } else if (value == 'log') {
+      expression = Math.log(expression);
+    } else if (value == 'sin') {
+      expression = Math.sin(expression);
+    } else if (value == 'cos') {
+      expression = Math.cos(expression);
+    } else if (value == 'tan') {
+      expression = Math.tan(expression);
+    } else if (value == '=') {
+      var answer = eval(expression);
+      expression = answer;
+    } else {
+      expression += value;
+    }
+
+    if (expression == undefined) {
+      expression = '';
+      ans.value = 0;
+    } else {
+      ans.value = expression;
+    } // expression += value;
+
+  }
+});
+
+var square = function square() {
+  return eval(expression * expression);
+};</script>
+      <script nomodule>var actions = document.querySelector('.actions');
+var ans = document.querySelector('.ans');
+console.log(actions);
+console.log(ans);
+var expression = '';
+var a = 0;
+actions.addEventListener('click', function (e) {
+  console.log(e.target);
+  var value = e.target.dataset['value'];
+
+  if (value !== undefined) {
+    // I'm good to go.
+    if (value == 'ce') {
+      expression = '';
+      ans.value = 0;
+      return true;
+    } else if (value == 'x^2') {
+      expression = square();
+    } else if (value == 'radic') {
+      expression = Math.sqrt(expression);
+    } else if (value == 'log') {
+      expression = Math.log(expression);
+    } else if (value == 'sin') {
+      expression = Math.sin(expression);
+    } else if (value == 'cos') {
+      expression = Math.cos(expression);
+    } else if (value == 'tan') {
+      expression = Math.tan(expression);
+    } else if (value == '=') {
+      var answer = eval(expression);
+      expression = answer;
+    } else {
+      expression += value;
+    }
+
+    if (expression == undefined) {
+      expression = '';
+      ans.value = 0;
+    } else {
+      ans.value = expression;
+    } // expression += value;
+
+  }
+});
+
+var square = function square() {
+  return eval(expression * expression);
+};</script></body><html>
